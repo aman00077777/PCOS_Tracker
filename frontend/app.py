@@ -65,13 +65,13 @@ st.markdown("""
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
         margin-bottom: 1.5rem;
         border: 1px solid #ECEEF6;
-        color: #4A4E69 !important;
+        color: #4A4E69 !important;  
     }
     
     .metric-value {
         font-size: 2.2rem;
         font-weight: 700;
-        color: #E29578;
+        color: #8C92AC !important;
         margin: 0.2rem 0;
     }
     
