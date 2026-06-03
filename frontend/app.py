@@ -29,16 +29,12 @@ st.markdown("""
     }
     
     .main {
-        background-color: #FAFAFC;
+        background-color: #FAFAFC !important;
     }
     
-   h1, h2, h3 {
-    color: #4A4E69;
-}
-
-.card p, .card div, .card span, .card label {
-    color: #4A4E69 !important;
-}
+    h1, h2, h3 {
+        color: #4A4E69 !important;
+    }
     
     .stButton>button {
         background: linear-gradient(135deg, #F3C6D1 0%, #E29578 100%);
@@ -59,25 +55,29 @@ st.markdown("""
     }
     
     .card {
-        background-color: white;
+        background-color: #FFFFFF !important;
         padding: 1.5rem;
         border-radius: 16px;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
         margin-bottom: 1.5rem;
         border: 1px solid #ECEEF6;
-        color: #4A4E69 !important;  
+        color: #4A4E69 !important;
+    }
+    
+    .card * {
+        color: #4A4E69 !important;
     }
     
     .metric-value {
-        font-size: 2.2rem;
-        font-weight: 700;
-        color: #8C92AC !important;
+        font-size: 2.2rem !important;
+        font-weight: 700 !important;
+        color: #E29578 !important;
         margin: 0.2rem 0;
     }
     
     .metric-label {
-        font-size: 0.9rem;
-        color: #8C92AC;
+        font-size: 0.9rem !important;
+        color: #8C92AC !important;
         font-weight: 500;
         text-transform: uppercase;
     }
@@ -87,7 +87,7 @@ st.markdown("""
         border-radius: 20px;
         font-weight: 600;
         font-size: 0.85rem;
-        color: white;
+        color: white !important;
         display: inline-block;
     }
     
@@ -95,6 +95,23 @@ st.markdown("""
     .phase-Follicular { background-color: #83C5BE; }
     .phase-Ovulatory { background-color: #FFB5A7; }
     .phase-Luteal { background-color: #9C89B8; }
+
+    /* Streamlit default overrides */
+    .stApp {
+        background-color: #FAFAFC !important;
+    }
+    
+    .stApp * {
+        color: #4A4E69;
+    }
+    
+    [data-testid="stAppViewContainer"] {
+        background-color: #FAFAFC !important;
+    }
+    
+    [data-testid="stSidebar"] {
+        background-color: #F0F2F6 !important;
+    }
 </style>
 """, unsafe_allow_html=True)
 
