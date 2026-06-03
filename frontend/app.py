@@ -32,9 +32,13 @@ st.markdown("""
         background-color: #FAFAFC;
     }
     
-    h1, h2, h3 {
-        color: #4A4E69;
-    }
+   h1, h2, h3 {
+    color: #4A4E69;
+}
+
+.card p, .card div, .card span, .card label {
+    color: #4A4E69 !important;
+}
     
     .stButton>button {
         background: linear-gradient(135deg, #F3C6D1 0%, #E29578 100%);
@@ -61,6 +65,7 @@ st.markdown("""
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
         margin-bottom: 1.5rem;
         border: 1px solid #ECEEF6;
+        color: #4A4E69 !important;
     }
     
     .metric-value {
