@@ -5,6 +5,8 @@ import plotly.figure_factory as ff
 import httpx
 from datetime import date, datetime, timedelta
 from report_generator import generate_pdf_report
+import os
+BACKEND_URL = os.getenv("BACKEND_URL", "http://localhost:8000")
 
 # Page config
 st.set_page_config(
@@ -15,7 +17,7 @@ st.set_page_config(
 )
 
 # API configuration
-API_URL = "http://localhost:8000"
+API_URL = BACKEND_URL
 
 # Custom Styling (Pastel medical theme)
 st.markdown("""
