@@ -55,32 +55,31 @@ st.markdown("""
     }
     
     .card {
-        background-color: #FFFFFF !important;
-        padding: 1.5rem;
-        border-radius: 16px;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
-        margin-bottom: 1.5rem;
-        border: 1px solid #ECEEF6;
-        color: #4A4E69 !important;
-    }
+    background-color: #1A1D26 !important;
+    padding: 1.5rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1.5rem;
+    border: 1px solid #2E3250;
+    color: #FAFAFC !important;
+}
     
-    .card * {
-        color: #4A4E69 !important;
-    }
-    
-    .metric-value {
-        font-size: 2.2rem !important;
-        font-weight: 700 !important;
-        color: #E29578 !important;
-        margin: 0.2rem 0;
-    }
-    
+   .card * {
+    color: #FAFAFC !important;
+}
     .metric-label {
-        font-size: 0.9rem !important;
-        color: #8C92AC !important;
-        font-weight: 500;
-        text-transform: uppercase;
-    }
+    font-size: 0.9rem !important;
+    color: #8C92AC !important;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.metric-value {
+    font-size: 2.2rem !important;
+    font-weight: 700 !important;
+    color: #E29578 !important;
+    margin: 0.2rem 0;
+}
     
     .phase-badge {
         padding: 0.2rem 0.8rem;
